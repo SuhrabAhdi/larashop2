@@ -16,3 +16,21 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('product',function(){
+    $products = [
+        [
+            'name'=>'iPhone 11',
+            'price'=>1200
+        ],
+        [
+            'name'=>'Galaxy 20A',
+            'price'=>200
+        ],
+        [
+            'name'=>'Mac book pro',
+            'price'=>2500
+        ],
+    ];
+    return json_encode($products);
+});

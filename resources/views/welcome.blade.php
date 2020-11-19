@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="home page, laravel," content="">
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -64,6 +64,10 @@
         </style>
     </head>
     <body>
+    <h1>Afghanistan security</h1>
+    <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo doloribus eius cum quasi ex nemo in voluptates! Aut odio, atque, eum voluptates ipsum quo expedita similique, explicabo nesciunt maiores beatae.
+    </p>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">

@@ -13,6 +13,17 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
-Route::get('/hello/{name}','HelloController@index');
+})->name('home');
 
+// Route::get('/admin/{name?}', function($name=null){
+// return $name==null?'List all product categories':"List $name category";
+// })->name('hello');
+// Route::view('hello','hello');
+
+Route::get('/client',function(){
+return redirect(route('home'));
+})->middleware('after','before');
+
+Route::get('admin/{id}',function($id){
+    return 'your id is '.$id;
+})->where('id','[a-zA-Z]+');
