@@ -34,3 +34,5 @@ Route::get('product',function(){
     ];
     return json_encode($products);
 });
+
+Route::apiResource('user','API\UserController');
